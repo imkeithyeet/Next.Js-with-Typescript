@@ -45,8 +45,24 @@ const Home : NextPage = ()=>{
           <InfoCard
             label="Course"
             title="Learn Next.js with Keith Codes"
-            imageURL='https://media.istockphoto.com/id/1075599562/photo/programmer-working-with-program-code.jpg?s=612x612&w=0&k=20&c=n3Vw5SMbMCWW1YGG6lnTfrwndNQ8B_R4Vw-BN7LkqpA='
-            studentCount='3,500'
+            imageURL='https://i.ytimg.com/vi/5UJA9KZba1E/maxresdefault.jpg'
+            studentCount='1,500'
+          />
+        </Grid>
+        <Grid xs={12} sm={4}> 
+          <InfoCard
+            label="Course"
+            title="Learn Node.js with Keith Codes"
+            imageURL='https://images.ctfassets.net/aq13lwl6616q/7cS8gBoWulxkWNWEm0FspJ/c7eb42dd82e27279307f8b9fc9b136fa/nodejs_cover_photo_smaller_size.png'
+            studentCount='3,000'
+          />
+        </Grid>
+        <Grid xs={12} sm={4}> 
+          <InfoCard
+            label="Course"
+            title="Learn Typescript and React with Keith Codes"
+            imageURL='https://www.freecodecamp.org/news/content/images/2022/10/typescript-cover.jpg'
+            studentCount='10,900'
           />
         </Grid>
       </Grid.Container>
