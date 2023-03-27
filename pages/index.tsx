@@ -2,7 +2,7 @@ import type  { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
-import { Container, Navbar, Text, Button} from '@nextui-org/react'
+import { Container, Navbar, Text, Button, Grid, Col} from '@nextui-org/react'
 
 const Home : NextPage = ()=>{
   return (
@@ -29,6 +29,16 @@ const Home : NextPage = ()=>{
         </Navbar.Content>
       </Navbar>
       {/* Jumbotron */}
+      <Grid.Container justify="center" css={{"height":"500px", "backgroundImage":"url(https://littlevisuals.co/images/canal.jpg)"}}>
+        <Grid xs={12} sm={6} alignItems="center">
+          <Col css ={{"width": "100%"}}>
+            <Text  weight={"bold"} size={70} css={{"textAlign": "center"}}> The Education Platform</Text>
+            <Text  weight={"bold"} size={70} css={{"textAlign": "center"}}> Of The Future</Text>
+
+          </Col>
+        </Grid>
+
+      </Grid.Container>
       {/* 3 Displaying Product Cards */}
     </Container>
     )
