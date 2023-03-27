@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import { Container, Navbar, Text, Button, Grid, Col} from '@nextui-org/react'
+import InfoCard from '@/components/infoCard'
 
 const Home : NextPage = ()=>{
   return (
@@ -34,12 +35,21 @@ const Home : NextPage = ()=>{
           <Col css ={{"width": "100%"}}>
             <Text  weight={"bold"} size={70} css={{"textAlign": "center"}}> The Education Platform</Text>
             <Text  weight={"bold"} size={70} css={{"textAlign": "center"}}> Of The Future</Text>
-
+            <Button size="md" shadow color="gradient" css={{"width": "100%", "marginTop": "10px"}}>Join For Free</Button>
           </Col>
         </Grid>
-
       </Grid.Container>
       {/* 3 Displaying Product Cards */}
+      <Grid.Container gap={2}>
+        <Grid xs={12} sm={4}> 
+          <InfoCard
+            label="Course"
+            title="Learn Next.js with Keith Codes"
+            imageURL='https://media.istockphoto.com/id/1075599562/photo/programmer-working-with-program-code.jpg?s=612x612&w=0&k=20&c=n3Vw5SMbMCWW1YGG6lnTfrwndNQ8B_R4Vw-BN7LkqpA='
+            studentCount='3,500'
+          />
+        </Grid>
+      </Grid.Container>
     </Container>
     )
 
