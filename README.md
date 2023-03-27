@@ -1,4 +1,6 @@
-## Next.Js with Typescript landing-page Website
+## Next.Js with Typescript landing-Page Website
+
+Implemented with Next.js with Typescript Frontend and NextUi for Css Framework
 
 
 
